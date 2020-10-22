@@ -1,0 +1,17 @@
+'
+'ClassDiagrams: Changing arrows direction
+'
+'By default, links between classes have two dashes -- and are vertically oriented. It is possible to use horizontal
+'link by putting a single dash (or dot) like this. You can also change directions by reversing the link:
+'
+'It is also possible to change arrow direction by adding left, right, up or down keywords inside the arrow:
+'
+'--------------------------------------
+'
+
+@startuml
+
+Student -o Room
+Chair --* Room
+
+@enduml

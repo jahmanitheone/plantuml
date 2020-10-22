@@ -1,0 +1,19 @@
+'
+'ClassDiagrams: Automatic namespace creation
+'
+'You can define another separator (other than the dot) using the command : set namespaceSeparator ???.
+'
+'set namespaceSeparator none - turn auto off
+'
+'--------------------------------------
+'
+
+@startuml
+
+set namespaceSeparator ::
+
+class X1::X2::foo {
+    some info
+}
+
+@enduml

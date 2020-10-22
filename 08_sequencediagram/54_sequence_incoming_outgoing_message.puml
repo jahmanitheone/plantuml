@@ -1,0 +1,23 @@
+'
+'Basics: Shortcut syntax for activation, deactivation, creation
+'
+'Incoming and outgoing messages
+'You can use incoming or outgoing arrows if you want to focus on a part of the diagram.
+'Use square brackets to denote the left "[" or the right "]" side of the diagram.
+'
+'[: right direction
+']: left direction
+'
+
+@startuml
+[-> A: DoWork
+activate A
+    A -> A: Internal call
+    activate A
+        A ->[ : << createRequest >>
+        A<--] : RequestCreated
+    deactivate A
+[<- A: Done
+deactivate A
+
+@enduml

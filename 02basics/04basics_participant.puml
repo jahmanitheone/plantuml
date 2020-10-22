@@ -1,0 +1,25 @@
+@startuml
+'
+'Basics: participant 
+'If the keyword participant is used to declare a participant, more control on that participant is possible.
+'The order of declaration will be the (default) order of display.
+'Using these other keywords to declare participants will change the shape of the participant representation:
+'• actor
+'• boundary
+'• control
+'• entity
+'• database
+'• collections
+'
+actor Foo1
+boundary Foo2
+control Foo3
+entity Foo4
+database Foo5
+collections Foo6
+Foo1 -> Foo2 : To boundary
+Foo1 -> Foo3 : To control
+Foo1 -> Foo4 : To entity
+Foo1 -> Foo5 : To database
+Foo1 -> Foo6 : To collections
+@enduml

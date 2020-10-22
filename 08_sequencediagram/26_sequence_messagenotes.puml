@@ -1,0 +1,19 @@
+@startuml
+'
+'Basics: Notes on messages
+'-----------------------
+'
+'It is possible to put notes on message using the note left or note right keywords just after the message.
+'You can have a multi-line note using the end note keywords.
+
+Alice->Bob : hello
+    note left: this is a first note
+Bob->Alice : ok
+    note right: this is another note
+Bob->Bob : I am thinking
+    note left
+    a note
+    can also be defined
+    on several lines
+    end note
+@enduml

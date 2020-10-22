@@ -1,0 +1,22 @@
+'
+'ClassDiagrams: Relations between classes
+'Relations between classes are defined using the following symbols :
+'Extension: <|--
+'Composition: *--
+'Aggregation: o--
+'Composition Association: ..
+'Extension Association: --
+'Drawing
+'It is possible to replace -- by .. to have a dotted line for associations:
+'Knowing those rules, it is possible to draw the following drawings:
+'--------------------------------------
+'
+
+
+@startuml
+Class21 #--Class22
+Class23 x--Class24
+Class25 }--Class26
+Class27 +--Class28
+Class29 ^--Class30
+@enduml

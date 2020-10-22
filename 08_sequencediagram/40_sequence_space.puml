@@ -1,0 +1,22 @@
+'
+'Basics: Space
+'
+'You can use ||| to indicate some spacing in the diagram.
+'It is also possible to specify a number of pixel to be used.
+'
+'|||: spacing
+'||100||: 100 pixel
+'
+
+@startuml
+Alice -> Bob: message 1
+Bob --> Alice: ok
+|||
+
+Alice -> Bob: message 2
+Bob --> Alice: ok
+||100||
+
+Alice -> Bob: message 3
+Bob --> Alice: ok
+@enduml

@@ -1,0 +1,46 @@
+'
+'ClassDiagrams: Abstract class, interface and enum
+'
+'You can declare a class as abstract using abstract" or abstract class keywords.
+'The class will be printed in italic.
+'You can use the interface, annotation and enum keywords too.
+'
+'abstract - italic
+'interface - italic
+'enum
+'
+'--------------------------------------
+'
+
+@startuml
+
+'Definition
+abstract class AbstractList
+abstract AbstractCollection
+interface List
+interface Collection
+class ArrayList {
+    Object[] elementData
+    size()
+}
+annotation SuppressWarnings
+
+'interface
+Collection <|- List
+Collection <|-- AbstractCollection
+
+'abstract
+List <|-- AbstractList
+AbstractCollection <|- AbstractList
+
+'class
+AbstractList <|-- ArrayList
+
+enum TimeUnit {
+    DAYS
+    HOURS
+    MINUTES
+}
+
+
+@enduml

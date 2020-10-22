@@ -1,0 +1,13 @@
+'
+'ClassDiagrams: Annotation
+'
+'<< xxx >>.
+'
+'--------------------------------------
+'
+
+@startuml
+
+class Object << general >>
+
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+'
+'Basics: Change arrow color
+'You can change the color of individual arrows using the following notation:
+'
+Bob -[#red]> Alice : hello
+Alice -[#0000FF]->Bob : ok
+@enduml

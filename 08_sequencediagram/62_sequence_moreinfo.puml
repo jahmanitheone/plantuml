@@ -1,0 +1,12 @@
+'
+'Basics: More information on titles
+'You can use creole formatting in the title.
+'
+'title: Get component title
+'
+
+@startuml
+title _Simple__ **communication** example
+Alice -> Bob: Authentication Request
+Bob -> Alice: Authentication Response
+@enduml

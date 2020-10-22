@@ -1,0 +1,43 @@
+@startsalt
+{
+Example: Grid
+    With ExternalLine 
+    Use +
+    {+
+        Login
+        | "MyName"
+        Password | "****"
+        [Cancel] | [ OK
+        ]
+    }
+    With Vertical Horizontal Line 
+    Use #
+    {#
+        Login
+        | "MyName"
+        Password | "****"
+        [Cancel] | [ OK
+        ]
+    }
+    With Vertical Horizontal Line 
+    Use !
+    {!
+        Login
+        | "MyName"
+        Password | "****"
+        [Cancel] | [ OK
+        ]
+    }
+    With Vertical Horizontal Line 
+    Use -
+    {-
+        Login
+        | "MyName"
+        Password | "****"
+        [Cancel] | [ OK
+        ]
+    }
+
+
+}
+@endsalt

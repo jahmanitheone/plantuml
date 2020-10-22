@@ -1,0 +1,23 @@
+'
+'ClassDiagrams: Packages links
+'
+' You can also define links between packages, like in the following example:
+'
+'--------------------------------------
+'
+
+@startuml
+
+scale 250 width
+
+skinparam packageStyle rectangle
+    package foo1.foo2 {
+}
+
+package foo1.foo2.foo3 {
+    class Object
+}
+
+foo1.foo2 +-- foo1.foo2.foo3
+
+@enduml

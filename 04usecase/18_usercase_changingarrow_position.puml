@@ -1,0 +1,17 @@
+'
+'UseCase: Changing arrows position
+'
+'It is also possible to change arrow direction by adding left, right, up or down keywords inside the arrow:
+'-left->
+'-right->
+'-up->
+'-down->
+'--------------------------------------
+'
+
+@startuml
+:user: -left-> (dummyLeft)
+:user: -right-> (dummyRight)
+:user: -up-> (dummyUp)
+:user: -down-> (dummyDown)
+@enduml

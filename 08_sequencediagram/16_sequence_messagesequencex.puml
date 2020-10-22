@@ -1,0 +1,9 @@
+@startuml
+'
+'Basics: essage sequence numbering
+'The keyword autonumber is used to automatically add number to messages.
+'
+autonumber
+Bob -> Alice : Authentication Request
+Bob <- Alice : Authentication Response
+@enduml

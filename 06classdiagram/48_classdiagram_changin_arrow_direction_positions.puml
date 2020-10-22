@@ -1,0 +1,16 @@
+'
+'ClassDiagrams: Changing arrows direction
+'
+'It is also possible to change arrow direction by adding left, right, up or down keywords inside the arrow:
+'
+'--------------------------------------
+'
+
+@startuml
+
+foo -left-> dummyLeft
+foo -right-> dummyRight
+foo -up-> dummyUp
+foo -down-> dummyDown
+
+@enduml

@@ -1,0 +1,14 @@
+'
+'Sequence Digram: Participant Ordere
+'
+'You can use the order keyword to customize the display order of participants.
+'
+'--------------------------------------
+'
+@startuml
+
+participant First order 10
+participant Middle order 20
+participant Last order 30
+
+@enduml

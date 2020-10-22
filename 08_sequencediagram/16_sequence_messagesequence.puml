@@ -1,0 +1,14 @@
+'
+'Sequence Digram: Message sequence numbering
+'
+'The keyword autonumber is used to automatically add number to messages.
+'
+'--------------------------------------
+'
+@startuml
+
+autonumber
+Bob -> Alice : Authentication Request
+Bob <- Alice : Authentication Response
+
+@enduml

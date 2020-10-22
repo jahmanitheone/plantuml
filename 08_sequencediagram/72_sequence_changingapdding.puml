@@ -1,0 +1,23 @@
+'
+'Basics: Changing padding
+'
+'It is possible to tune some padding settings.
+'
+
+@startuml
+skinparam ParticipantPadding 20
+skinparam BoxPadding 10
+
+box "Alice Actions"
+    participant Alice1
+    participant Alice2
+end box
+
+box "Bob Actions"
+    participant Bob1
+    participant Bob2
+end box
+
+Alice1 -> Bob1 : hello
+Alice1 -> Out : out
+@enduml

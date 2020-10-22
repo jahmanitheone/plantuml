@@ -1,0 +1,29 @@
+'
+'To have a Tree, you have to start with {T and to use + to denote hierarchy.'
+'
+'{T
+'+ tree hiearchy
+'
+@startsalt
+{
+Tree widget
+
+{T
++ World
+++ America
++++ Canada
++++ USA
+++++ New York
+++++ Boston
++++ Mexico
+++ Europe
++++ Italy
++++ Germany
+++++ Berlin
+++ Africa
+}
+}
+
+}
+@endsalt
+

@@ -1,0 +1,27 @@
+'
+'Basics: Lifeline
+'Lifeline Activation and Destruction
+'activate:
+'   The activate and deactivate are used to denote participant activation.
+'   Once a participant is activated, its lifeline appears.
+'destroy:
+'   The destroy denote the end of the lifeline of a participant.
+'The activate and deactivate apply on the previous message.
+'
+
+@startuml
+participant User
+
+User -> A: DoWork
+activate A
+    A -> B: << createRequest >>
+    activate B
+        B -> C: DoWork
+            activate C
+                C --> B: WorkDone
+            destroy C
+        B --> A: RequestCreated
+    deactivate B
+    A -> User: Done
+deactivate A
+@enduml

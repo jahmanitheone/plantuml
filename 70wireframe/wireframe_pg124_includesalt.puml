@@ -1,0 +1,60 @@
+'
+' OpenIconic
+'
+
+@startuml
+
+'start
+(*) --> "
+
+'Down box
+{{
+salt
+{+
+    <b>an example
+    choose one option
+    ()one
+    ()two
+    [ok]
+}
+}}
+
+'Right box
+" as choose
+choose -right-> "
+{{
+salt
+{+
+    <b>please wait
+    operation in progress
+    <&clock>
+    [cancel]
+}
+}}
+
+'Right box
+" as wait
+wait -right-> "
+{{
+salt
+{+
+    <b>success
+    congratulations!
+    [ ok ]
+}
+}}
+
+'down error
+" as success 
+wait -down-> "
+{{
+salt
+    {+
+    <b>error
+    failed, sorry
+    [ok]
+    }
+}}
+
+"
+@enduml

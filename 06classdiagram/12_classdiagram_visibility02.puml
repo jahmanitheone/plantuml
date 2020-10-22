@@ -1,0 +1,25 @@
+'
+'ClassDiagrams: Defining visibility
+'
+'When you define methods or fields, you can use characters to define the 
+'visibility of the corresponding item:
+'
+'Character
+'-: private (image red square)
+'#: proctected (image yellow diamond)
+'~: package (image blue triagle)
+'+: public (image green circle)
+'
+'--------------------------------------
+'
+@startuml
+
+
+class Dummy {
+    -field1
+    #field2
+    ~method1()
+    +method2()
+}
+
+@enduml

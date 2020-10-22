@@ -1,0 +1,16 @@
+'
+'UseCase: Splitting diagrams
+'
+'The newpage keywords to split your diagram into several pages or images.
+'2 pages are created.
+'
+'newpage - creates nagivation pages
+'
+'--------------------------------------
+'
+
+@startuml
+:actor1: --> (Usecase1)
+newpage
+:actor2: --> (Usecase2)
+@enduml

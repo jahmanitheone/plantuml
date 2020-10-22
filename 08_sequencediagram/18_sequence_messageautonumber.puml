@@ -1,0 +1,16 @@
+@startuml
+'
+'Basics: essage sequence numbering - auto number
+'You can specify a startnumber with autonumber start , 
+'and also an increment with autonumber start increment.
+'
+autonumber
+Bob -> Alice : Authentication Request
+Bob <- Alice : Authentication Response
+autonumber 15
+Bob -> Alice : Another authentication Request
+Bob <- Alice : Another authentication Response
+autonumber 40 10
+Bob -> Alice : Yet another authentication Request
+Bob <- Alice : Yet another authentication Response
+@enduml

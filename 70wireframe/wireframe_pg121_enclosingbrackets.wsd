@@ -1,0 +1,21 @@
+'
+'Enclosing brackets
+'You can define subelements by opening a new opening bracket.
+'
+'
+@startsalt
+{
+Enclosing brackets:
+--
+
+{
+    Name        | "         "
+    Modifiers:  | { (X) public | () default | () private | () protected
+                abstract | [] final | [] static }
+    Superclass: | { "java.lang.Object " | [Browse...] }
+}
+
+
+}
+@endsalt
+

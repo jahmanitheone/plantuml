@@ -1,0 +1,17 @@
+'
+'Basics: Stereotypes and Spots
+'
+'It is possible to add stereotypes to participants using << and >>.
+'In the stereotype, you can add a spotted character in a colored circle using the syntax (X,color).
+'
+'<<xxx>>: add stereotype xxx
+'Example:
+'Class has <<Generated>> and <<Testable>> stereotypes
+'
+
+@startuml
+participant "Famous Bob" as Bob << Generated >>
+participant Alice << (C,#ADD1B2) Testable >>
+
+Bob->Alice: First message
+@enduml

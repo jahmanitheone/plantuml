@@ -1,0 +1,11 @@
+@startuml
+'
+'Basics: Page header and footer
+'Pages can display headers and footers using header and footer.
+'
+header Page Header
+footer Page %page% of %lastpage%
+title Example Title
+Alice -> Bob : message 1
+Alice -> Bob : message 2
+@enduml

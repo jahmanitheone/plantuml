@@ -1,0 +1,16 @@
+'
+'UseCase: Usecases description
+'
+'If one actor/use case extends another one, you can use the symbol If one actor/use case extends another one, you can use the symbol <|--
+'
+'<|--: extends
+'
+'--------------------------------------
+'
+
+@startuml
+:Main Admin: as Admin
+(Use the application) as (Use)
+User <|-- Admin
+(Start) <|-- (Use)
+@enduml

@@ -1,0 +1,27 @@
+'
+'ClassDiagrams: Association classes
+'
+'You can define association class after that a relation has been defined between two classes, 
+'like in this example:
+'
+'--:  reverse association horizontally
+'..: multiple association
+'--------------------------------------
+'
+
+@startuml
+
+class Student {
+    Name
+}
+
+class Enrollment {
+    drop()
+    cancel()
+}
+
+Student "0..*" -- "1..*" Course
+(Student, Course) .. Enrollment
+
+
+@enduml

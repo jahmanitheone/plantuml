@@ -1,0 +1,14 @@
+'
+'ClassDiagrams: Lollipop interface
+'
+'You can also define lollipops interface on classes, using the following syntax:
+'
+'--------------------------------------
+'
+
+@startuml
+
+class foo
+    bar ()- foo
+
+@enduml

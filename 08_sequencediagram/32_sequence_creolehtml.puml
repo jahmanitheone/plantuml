@@ -1,0 +1,40 @@
+'
+'Basics: Creole and HTML
+'
+'It is also possible to use creole formatting:
+'--: Dash as stroke
+'...: Dots before and after
+'"": monospace
+'//:italic
+'__:underline
+'~~: space before after
+@startuml
+participant Alice
+participant "The **Famous** Bob" as Bob
+
+Alice -> Bob : hello --there--
+    ... Some ~~long delay~~ ...
+    ... Some ~~long delay~~ ...
+    ... ~~xxx~~ ...
+Bob -> Alice : ok
+    note left
+        This is **bold**
+        This is //italics//
+        This is ""monospaced""
+        This is --stroked--
+        This is __underlined__
+        This is ~~waved~~
+    end note
+Alice -> Bob : A //well formatted// message
+    note right of Alice
+        This is <back:cadetblue><size:18>displayed</size></back>
+        __left of__ Alice.
+    end note
+note left of Bob
+    <u:red>This</u> is <color #118888>displayed</color>
+    **<color purple>left of</color> <s:red>Alice</strike> Bob**.
+end note
+note over Alice, Bob
+    <w:#FF33FF>This is hosted</w> by <img /home/pchauvet/Pictures/coronavirus.png>
+end note
+@enduml

@@ -1,0 +1,33 @@
+'
+'ClassDiagrams: Color gradient
+'
+'It's possible to declare individual color for classes or note using the # notation.
+'You can use either standard color name or RGB code.
+'You can also use color gradient in background, with the following syntax: two colors names separated either by:
+'• |,
+'• /,
+'• \,
+'• or -
+'depending the direction of the gradient.
+'For example, you could have:
+'
+'--------------------------------------
+'
+
+@startuml
+
+skinparam backgroundcolor AntiqueWhite/Gold
+skinparam classBackgroundColor Wheat|CornflowerBlue
+
+class Foo #red-green
+note left of Foo #blue\9932CC
+    this is my
+    note on this class
+end note
+
+
+
+package example #GreenYellow/LightGoldenRodYellow {
+class Dummy
+
+@enduml

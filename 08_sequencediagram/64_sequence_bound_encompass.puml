@@ -1,0 +1,19 @@
+'
+'Basics: Participants encompass
+'
+'It is possible to draw a box around some participants, using box and end box commands.
+'You can add an optional title or a optional background color, after the box keyword.
+'
+'box: encompass
+'
+
+@startuml
+box "Internal Service" #LightBlue
+    participant Bob
+    participant Alice
+end box
+
+participant Other
+Bob -> Alice : hello
+Alice -> Other : hello
+@enduml

@@ -1,0 +1,37 @@
+'
+'ClassDiagrams: Adding methods
+'
+'It is also possible to group between brackets {} all fields and methods.
+'Note that the syntax is highly flexible about type/name order.
+'
+'Class Name {
+'   String data
+'   void methods() 
+'}
+'or
+'
+'class Flight {
+'    flightNumber : Integer
+'    departureTime : Date
+'}
+'
+'You can use {field} and {method} modifiers to override default behaviour of the parser about fields and methods.
+'
+'--------------------------------------
+'
+@startuml
+class Dummy {
+    String data
+    void methods()
+}
+
+class Flight {
+    flightNumber : Integer
+    departureTime : Date
+}
+
+class ClassField {
+    {field} A field (despite parentheses)
+    {method} Some method
+}
+@enduml

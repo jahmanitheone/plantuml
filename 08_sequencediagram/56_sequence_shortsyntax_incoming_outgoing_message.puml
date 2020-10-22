@@ -1,0 +1,38 @@
+'
+'Basics: Shortcut syntax for activation, deactivation, creation
+'
+'Incoming and outgoing messages
+'You can use incoming or outgoing arrows if you want to focus on a part of the diagram.
+'Use square brackets to denote the left "[" or the right "]" side of the diagram.
+'
+' On left side:
+'[->: right direction
+'[o->: circle right direction
+'[o->o: circle->circle right direction
+'[x->: x at the of right direction
+'[<-: left direction
+'[<-x: left direction with x
+'
+' On right side:]
+'->:] right direction
+'o->:] circle right direction
+'o->o:] circle->circle right direction
+'x->:] x at the of right direction
+'<-:] left direction
+'<-x:] left direction with x
+'
+
+@startuml
+[-> Bob
+[o-> Bob
+[o->o Bob
+[x-> Bob
+[<- Bob
+[x<- Bob
+Bob->]
+Bob->o]
+Bob o->o]
+Bob->x]
+Bob <-]
+Bob x<-]
+@enduml

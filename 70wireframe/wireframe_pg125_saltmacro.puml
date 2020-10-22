@@ -1,0 +1,39 @@
+'
+' OpenIconic - It can also be combined with define macro.
+'
+
+@startsalt
+
+'start
+!unquoted function SALT($x)
+"{{
+salt
+%invoke_void_func("_"+$x)
+}}" as $x
+!endfunction
+
+
+'success
+!function _success()
+{+
+    <b>success
+    congratulations!
+    [ok]
+}
+!endfunction
+
+'error
+!function _error()
+{+
+    <b>error
+    failed, sorry
+    [ok]
+}
+!endfunction
+
+(*) --> SALT(choose)
+-right-> SALT(wait)
+wait -right-> SALT(success)
+wait -down-> SALT(error)
+
+@endsalt

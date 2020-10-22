@@ -1,0 +1,37 @@
+'
+'Sequence Digram: Change arrow style
+'
+'You can change arrow style by several ways:
+'• add a final x to denote a lost message
+'• use \ or / instead of < or > to have only the bottom or top part of the arrow
+'• repeat the arrow head (for example, >> or //) head to have a thin drawing
+'• use -- instead of - to have a dotted arrow add a final "o" at arrow head
+'• use bidirectional arrow <->
+'
+'
+'--------------------------------------
+'
+@startuml
+
+'x to denote a lost message
+Bob ->x Alice
+'solid line, solid arrow
+Bob -> Alice
+'solid line, not solid arrow
+Bob ->> Alice
+'\ top part of the arrow
+Bob -\ Alice
+'\ solid arrow, bottom part of the arrow
+Bob \\- Alice
+'\ dotterr arrow, bottom part of the arrow
+Bob //-- Alice
+'add circle "o" at end of arrow head- right
+Bob ->o Alice
+'add circle "o" at end of arrow head- left
+Bob o\\-- Alice
+'use bidirectional arrow <->
+Bob <-> Alice
+'use bidirectional arrow <->, circle at end or right
+Bob <->o Alice
+
+@enduml
